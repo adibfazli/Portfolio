@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+html {
+    /* height: 2000px; */
+    background-color: rgb(32, 32, 32);
+    background-image: url(./image/last\ porto.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: fixed;
+    }
+body{
+    height: 100%;
+    background-image: linear-gradient(0deg,#0f0f0f, transparent 70%);
+    background-size: 100% 100%;
+    mix-blend-mode: difference;
+    /* overflow-y: scroll; */
+    /* scroll-behavior: smooth; */
+}
+
+/* ///////////////////////////////// */
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+nav a:hover{
+    box-shadow: 0 1px #fbff0067;
+    transition: .5s;
+}
+nav .logo{
+    width: 17%;
+    margin-left: 3%;
+    margin-top: -15px;
+    opacity:75%;
+}
+nav div{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav span{
+    color: rgb(180, 180, 180);
+    font-size: 23px;
+}
+.fontF{
+    /* font-family: 'Poiret One', cursive; */
+    /* font-family: 'Josefin Slab', serif; */
+    /* font-family: 'Julius Sans One', sans-serif; */
+    font-family: 'Nixie One', cursive;
+}
+
+/* //////////////// IN BODY ///////////////// */
+.hello{
+    position: absolute;
+    top: 610px;
+    left: 4%;
+    width: fit-content;
+}
+.hello h1{
+    color: white;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 160px;
+}
+.myName{
+    font-family: 'Srisakdi', cursive;
+    font-size: 45px;
+    color: white;
+}
+.aboutDiv p{
+    color: white;
+}
+.gitHubLink{
+    text-decoration: none;
+    color: white;
+}
+.postInfoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projectName{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+
+
+
+
+
+
+/* //////////////// Responsive Web ///////////////// */
+@media only screen and (max-width: 360px) { /* SMARTPHONES PORTRAIT */
+    html {
+        background-position-y: 20px;
+        background-size: 130% auto;
+        }
+    /* ///////////////////////////////// */
+    nav{
+        height: 40px;
+        margin-top: 6px;
+    }
+    nav a{
+        font-size: 10px;
+    }
+    nav span{
+        font-size: 8px;
+    }
+    nav div{
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .hello{
+        top: 210px;
+        font-size: 15px;
+        left: 4%;
+    }
+    .myName{
+        margin-top: -7px;
+        margin-left: 10px;
+        font-family: 'Srisakdi', cursive;
+        font-size: 10px;
+    }
+    .hello .aboutMe{
+        font-size: 10px;
+        
+    }
+}
+@media only screen and (min-width: 480px) { /* SMARTPHONES LANDSCAPE */
+
+
+}
+@media only screen and (min-width: 768px) { /* TABLETS PORTRAIT */
+
+
+}
+@media only screen and (min-width: 1024px) { /* TABLET LANDSCAPE / DESKTOP */
+    .hello{
+        width: 100%;
+    }
+    .hello .aboutDiv p{ 
+        font-family: 'Nixie One', cursive;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .aboutDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -1.3%;
+        background-color: rgba(0, 0, 0, 0.281);
+        width: 40%;
+        border-radius: 20px;
+        visibility: hidden;
+        margin-top: 25px;
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.281);
+        /* transition:all 2s ease-out; */
+        
+    }
+    .aboutDiv p{
+        margin: 0;
+    }
+    .aboutDiv .lastP{
+        margin-bottom: 5px;
+    }
+    .postContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1100px;
+    }
+    .post{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        width: 65%;
+        height: 500px;
+        margin-bottom: 100px;
+    }
+    .postInfoDiv{
+        width: 100%;
+        background-color: rgb(26, 26, 26);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        /* position: relative; */
+    }
+    .postShotDiv{
+        width: 100%;
+        background-color: rgb(61, 61, 61);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .postImg{
+        margin-top: 22px;
+        width: 820px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        /* filter: grayscale(50%); */
+    }
+    .gitImg{
+        width: 150px;
+        filter: drop-shadow(0px 0px 3px rgba(107, 107, 107, 0.562)); 
+    }
+    .myName{
+        margin-left: 8.2%;
+        margin-top: -1.5%;
+    }
+    .gitHubLink{
+        font-size: 30px;
+    }
+    .projectName{
+        /* position: absolute; */
+        top: 5%;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+}  
