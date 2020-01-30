@@ -11,6 +11,7 @@ html {
     background-size: 100% auto;
     background-position: top center;
     background-attachment: fixed;
+    scroll-behavior: smooth;
     }
 body{
     height: 100%;
@@ -70,11 +71,9 @@ nav span{
 .hello h1{
     color: white;
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 160px;
 }
 .myName{
     font-family: 'Srisakdi', cursive;
-    font-size: 45px;
     color: white;
 }
 .aboutDiv p{
@@ -82,6 +81,9 @@ nav span{
 }
 .gitHubLink{
     text-decoration: none;
+    color: rgb(180, 180, 180);
+}
+.gitHubLink:hover{
     color: white;
 }
 .postInfoDiv{
@@ -92,12 +94,30 @@ nav span{
 }
 .projectName{
     text-decoration: none;
+    color: rgb(180, 180, 180);
+    
+    /* font-family: 'Nixie One', cursive; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.projectName:hover{
     color: white;
-    font-size: 30px;
+}
+footer{
+    background-color: white;
+    border-radius: 550px;
+    /* margin-bottom: 100px; */
+    background-color: rgb(61, 61, 61);
+}
+.contactAContainer{
 
 }
-
-
+.contactIcon{
+    
+}
+footer p{
+    color: rgb(180, 180, 180);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 
 
@@ -138,7 +158,7 @@ nav span{
     }
     .hello .aboutMe{
         font-size: 10px;
-        
+        color: rgb(255, 10, 10);
     }
 }
 @media only screen and (min-width: 480px) { /* SMARTPHONES LANDSCAPE */
@@ -158,6 +178,9 @@ nav span{
         font-size: 18px;
         margin-top: 5px;
     }
+    .hello h1{
+        font-size: 160px;
+    }
     .aboutDiv{
         display: flex;
         flex-direction: column;
@@ -170,7 +193,6 @@ nav span{
         margin-top: 25px;
         box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.281);
         /* transition:all 2s ease-out; */
-        
     }
     .aboutDiv p{
         margin: 0;
@@ -196,6 +218,9 @@ nav span{
         background-color: rgb(26, 26, 26);
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         /* position: relative; */
     }
     .postShotDiv{
@@ -217,8 +242,14 @@ nav span{
     .gitImg{
         width: 150px;
         filter: drop-shadow(0px 0px 3px rgba(107, 107, 107, 0.562)); 
+        /* margin-top: 50px; */
+    }.gitDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .myName{
+        font-size: 45px;
         margin-left: 8.2%;
         margin-top: -1.5%;
     }
@@ -226,10 +257,33 @@ nav span{
         font-size: 30px;
     }
     .projectName{
-        /* position: absolute; */
-        top: 5%;
         font-size: 30px;
         font-weight: 700;
     }
+    .stack{
+        width: 80%;
+    }
+    footer{
+        width: 50%;
+        margin-left: 25%;
+        height: 50px;
+        /* margin-bottom: 100px; */
+    }
+    .contactAContainer{
+        margin-left: 60%;
+        margin-top: -60px;
+        width: 35%;
+    }
+    .contactIcon{
+        width: 25%;
+    }
+    footer p{
+        font-size: 15px;
+        margin-left: 2%;
+        display: inline-block;
+        margin-top: 16px;
+        padding:0;
+    }
+    
 
 }  
