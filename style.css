@@ -128,41 +128,78 @@ footer{
 @media only screen and (max-width: 360px) { /* SMARTPHONES PORTRAIT */
     html {
         background-position-y: 20px;
-        background-size: 130% auto;
+        background-size: 13% auto;
         }
     /* ///////////////////////////////// */
     nav{
+        width: 100%;
         height: 40px;
         margin-top: 6px;
     }
+    nav .logo{
+        width: 25%;
+        margin-left: 3%;
+        margin-top: -3px;
+        opacity:75%;
+    }
     nav a{
-        font-size: 10px;
+        font-size: 15px;
+        cursor: pointer;
     }
     nav span{
-        font-size: 8px;
+        font-size: 13px;
     }
-    nav div{
-        width: 40%;
+    .navAContainer{
+        background-color: violet;
+        width: 70%;
+        margin-right: 2%;
         display: flex;
         justify-content: space-evenly;
     }
     .hello{
         top: 210px;
-        font-size: 15px;
+        font-size: 30px;
         left: 4%;
     }
     .myName{
         margin-top: -7px;
         margin-left: 10px;
         font-family: 'Srisakdi', cursive;
-        font-size: 10px;
+        font-size: 20px;
     }
-    .hello .aboutMe{
-        font-size: 10px;
+    /* .hello .aboutMe{
+        font-size: 8px;
         color: rgb(255, 10, 10);
+    } */
+    .aboutDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .aboutDiv p{
+        margin: 0;
+        font-size: 12px;
+    }
+    .aboutDiv .lastP{
+        margin-bottom: 5px;
+    }
+    .postContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 500px;
+    }
+    .post{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        width: 65%;
+        height: 500px;
+        margin-bottom: 100px;
     }
 }
 @media only screen and (min-width: 480px) { /* SMARTPHONES LANDSCAPE */
+
+    
 
 
 }
@@ -288,6 +325,4 @@ footer{
         margin-top: 16px;
         padding:0;
     }
-    
-
 }  
