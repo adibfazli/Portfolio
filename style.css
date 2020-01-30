@@ -114,7 +114,7 @@ footer{
 .contactIcon{
     
 }
-footer p{
+.right{
     color: rgb(180, 180, 180);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -277,7 +277,7 @@ footer p{
     .contactIcon{
         width: 25%;
     }
-    footer p{
+    .right{
         font-size: 15px;
         margin-left: 2%;
         display: inline-block;
