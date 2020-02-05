@@ -125,47 +125,53 @@ footer{
 
 
 /* //////////////// Responsive Web ///////////////// */
-@media only screen and (max-width: 360px) { /* SMARTPHONES PORTRAIT */
+@media only screen and (max-width: 400px) { /* SMARTPHONES PORTRAIT */
     html {
-        background-position-y: 20px;
-        background-size: 13% auto;
-        }
-    /* ///////////////////////////////// */
+        background-position-y: 100px;
+        background-size: 183% auto;
+        width: 100%;
+    }
+        /* ///////////////////////////////// */
+    body{
+        width: 310%;
+        
+    }
     nav{
         width: 100%;
         height: 40px;
-        margin-top: 6px;
+        /* background-color: green; */
     }
     nav .logo{
-        width: 25%;
+        margin-top: 6px;
         margin-left: 3%;
+        width: 35%;
         margin-top: -3px;
         opacity:75%;
     }
     nav a{
-        font-size: 15px;
+        font-size: 40px;
         cursor: pointer;
     }
     nav span{
-        font-size: 13px;
+        font-size: 27px;
     }
     .navAContainer{
-        background-color: violet;
-        width: 70%;
+        /* background-color: violet; */
+        width: 50%;
         margin-right: 2%;
         display: flex;
         justify-content: space-evenly;
     }
     .hello{
-        top: 210px;
-        font-size: 30px;
-        left: 4%;
+        top: 1150px;
+        font-size: 165px;
+        /* left: 4%; */
     }
     .myName{
-        margin-top: -7px;
-        margin-left: 10px;
+        margin-top: -50px;
+        margin-left: 170px;
         font-family: 'Srisakdi', cursive;
-        font-size: 20px;
+        font-size: 100px;
     }
     /* .hello .aboutMe{
         font-size: 8px;
@@ -175,10 +181,14 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
+        /* visibility: visible; */
+        background-color: rgba(0, 0, 0, 0.418);
+        box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.281);
     }
     .aboutDiv p{
-        margin: 0;
-        font-size: 12px;
+        margin: 0px;
+        font-size: 37px;
     }
     .aboutDiv .lastP{
         margin-bottom: 5px;
@@ -187,19 +197,72 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 500px;
+        margin-top: 2200px;
+        width: fit-content;
     }
     .post{
         display: grid;
         grid-template-columns: 1fr 4fr;
-        width: 65%;
-        height: 500px;
+        width: 99%;
+        height: 550px;
         margin-bottom: 100px;
+    }
+    .postInfoDiv{
+        width: 100%;
+        background-color: rgb(26, 26, 26);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* position: relative; */
+    }
+    .postShotDiv{
+        width: 100%;
+        background-color: rgb(61, 61, 61);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .postImg{
+        margin-top: 2.5%;
+        width: 95%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        /* filter: grayscale(50%); */
+    }
+    .gitImg{
+        width: 50%;
+    }
+    .stack{
+        width: 80%;
+    }
+    footer{
+        position: absolute;
+        width: 80%;
+        margin-left: 10%;
+        height: 70px;
+        bottom: 17px;
+    }
+    .contactAContainer{
+        margin-left: 52%;
+        width: 45%;
+        margin-top: -5.6%;
+        
+    }
+    .contactIcon{
+        width: 20%;
+        margin-left: 10%;
+    }
+    .right{
+        font-size: 20px;
+        margin-top: 2.4%;
+        margin-left: 3%;
     }
 }
 @media only screen and (min-width: 480px) { /* SMARTPHONES LANDSCAPE */
-
-    
 
 
 }
