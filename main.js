@@ -27,7 +27,7 @@ projects = [
         name:'Minesweeper',
         gitHubImage:'./image/Octocat.png',
         gitHub:'https://github.com/adibfazli/Minesweeper',
-        link:'',
+        link:'https://adibfazli.github.io/Minesweeper/',
         image:'./image/minesweeper.jpg',
         technology:'./image/jsHtmlCss.png',
     }
