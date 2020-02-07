@@ -358,7 +358,7 @@ footer{
     }
     .gitImg{
         width: 150px;
-        filter: drop-shadow(0px 0px 3px rgba(107, 107, 107, 0.562)); 
+        /* filter: drop-shadow(0px 0px 3px rgba(107, 107, 107, 0.562));  */
         /* margin-top: 50px; */
     }.gitDiv{
         display: flex;
